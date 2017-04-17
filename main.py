@@ -5,14 +5,30 @@ def globals_in_place():
     pass
 
 
-def start_setup_globals():
+def setup_globals():
+    pass
+
+
+def load_next_to_play():
+    pass
+
+
+def update_next_to_play():
+    pass
+
+
+def shutdown_in(mins):
+    pass
+
+
+def start_friends():
     pass
 
 
 def main():
     # Check if globals are in place
     if not globals_in_place():
-        start_setup_globals()
+        setup_globals()
     # Load specific data
 
     # Update data
