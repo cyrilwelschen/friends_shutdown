@@ -33,8 +33,10 @@ def main():
         for i, name in enumerate(array_of_episodes):
             if name == last:
                 os.system("cd " + PATH + "; vlc " +
-                          array_of_episodes[i+1] + " " + array_of_episodes[i+2])
-                os.system("shutdown -P +34")
+                          array_of_episodes[(i+1) % len(array_of_episodes)] +
+                          " " + array_of_episodes[(i+2) %
+                                                  len(array_of_episodes)])
+                # os.system("shutdown -P +34")
                 found = True
         if not found:
             print("Couldn't find next episode")
@@ -42,4 +44,4 @@ def main():
         print("Proposed path doesn't exist!")
 
 if __name__ == "__main__":
-    current_episode()
+    main()
