@@ -42,7 +42,7 @@ def main():
         found = False
         for i, name in enumerate(array_of_episodes):
             if name == last:
-                os.system("shutdown -P +35")
+                os.system("shutdown -P +45")
                 os.system("cd " + PATH + "; vlc " +
                           array_of_episodes[(i+1) % len(array_of_episodes)] +
                           " " + array_of_episodes[(i+2) %
